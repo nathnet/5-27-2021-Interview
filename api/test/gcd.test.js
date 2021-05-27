@@ -1,5 +1,5 @@
 const assert = require('assert');
-const gcd = require('../routes/gcd');
+const gcd = require('../classes/gcd');
 
 describe('Greatest Common Divisor', () => {
     it('should return 5', () => {
