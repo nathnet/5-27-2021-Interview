@@ -20,3 +20,4 @@ Since my main language is Java and I have never created a backend server using J
 
 ## FOR MY OWN REFERENCE
 The error with the api was due to the repeated naming for the route "localhost:3000/api/gcd'/gcd'" which is supposed to be "localhost:3000/api/gcd" only. The input access in the request is in req.'body'.input, not just req.input.
+The way to access this api at the moment is to make a POST request through Postman at "localhost:3000/api/gcd". The payload is in JSON form in the body with the key name as "input".
