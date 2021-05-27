@@ -10,11 +10,11 @@ The rest of the commits are for my learning progress for future endeavour.
 if you want to run the test  
 3. Run npm test  
 if you want to run the server  
-3. Run npm start
-4. Open up Postman
-5. Set the request to be POST and the location to be "localhost:3000/api/gcd"
-6. Set the "input" key in the JSON body with the array of numbers
-7. AND GO!
+4. Run npm start
+5. Open up Postman
+6. Set the request to be POST and the location to be "localhost:3000/api/gcd"
+7. Set the "input" key in the JSON body with the array of numbers
+8. AND GO!
 
 ## How I approached the problem
 I started looking up how to set up the server for Java first. After having gone through a few blogs, I find that it may not be suitable for the current situation considering the time frame. I then changed my language to Node.js and set up the server side using Express. Upon creating the server, I created a function for greatestCommonDivisor (GCD) based on my past experience on how to create API first. Then, I looked up Euclidean algorithms to find out how GCD is computed. I then typed in the algorithm into the function using recursion at first. Due to the nature of recursion's stack, I devised the algorithm to run in iterations instead. Afterwards, I looked up how to do unit testing in Node.js and I stumbled upon Mocha. I took the opportunity to learn Mocha and used it as the unit testing library for this interview. After having made sure that the algorithm runs correctly, I looked up how to apply SOLID to Node.js and see if I can create classes and interfaces like Java applications. After a few tries, I decided that it may be better to create a functional API first. So, I dropped the SOLID principles application and I tried to create a router.post to make the API available for clients. However, the router post still failed by the time of submission.
