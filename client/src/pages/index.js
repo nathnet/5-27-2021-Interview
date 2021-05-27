@@ -9,16 +9,17 @@ function Home() {
     });
 
     function handleChange(event) {
+        let value = event.target.value.replace(/[^0-9\s]+/g, "");
         setState({
             ...state,
-            [event.target.name]: event.target.value
+            [event.target.name]: value
         });
     }
 
     function handleSubmit(event) {
         event.preventDefault();
 
-        let numbers = state.numbers.trim().replace(/\s\s+/g, ' ').split(" ");
+        let numbers = state.numbers;
 
         axios
             .post(`${window.location.origin.toString()}/api/gcd`, { numbers })
@@ -50,7 +51,7 @@ function Home() {
                         className="p-2"
                         id="numbers"
                         name="numbers"
-                        value={state.input}
+                        value={state.numbers}
                         onChange={handleChange}
                     />
 

@@ -9,6 +9,9 @@ const GreatestCommonDivisor = new gcd();
  router.post('/gcd', function(req, res) {
     try {
         let input = req.body.numbers;
+        input = input.trim()
+        input = input.replace(/[^0-9\s]+/g, '').replace(/\s\s+/g, ' ')
+        input = input.split(" ");
         let result = GreatestCommonDivisor.arrayGreatestCommonDivisor(input);
 
         return res.status(200).json({
