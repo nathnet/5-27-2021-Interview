@@ -14,4 +14,8 @@ describe('Greatest Common Divisor', () => {
         const res = gcd.greatestCommonDivisor([20, 25, 11125, 3435, 33435, 45]);
         assert.strictEqual(res, 5);
     });
+    it('should return 1', () => {
+        const res = gcd.greatestCommonDivisor([1, 5, 2, 5, 33435, 99]);
+        assert.strictEqual(res, 1);
+    });
 });
