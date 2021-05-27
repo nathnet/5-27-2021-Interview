@@ -1,7 +1,7 @@
 # Agoda-Interview
 
-Although the functionality is there, there is no functional API at the time of submission.
-Commit at the time of submission: 5bf77a4
+Although the functionality is there, there is no functional API at the time of submission.  
+Commit at the time of submission: 5bf77a4  
 The rest of the commits are for my learning progress for future endeavour.
 
 ## How to run
@@ -28,5 +28,5 @@ I started looking up how to set up the server for Java first. After having gone 
 Since my main language is Java and I have never created a backend server using Java before, I decided to use Node.js instead. Using Node.js alleviated the obstacle in creating a server. However, it has posed new challenges as I have never written a separate test files for Node.js applications since I usually used Postman to test my applications. Another challenge was the application of SOLID principles on Node.js. I have never learned classes and interfaces in Javascript before, and it seems like JS does not have interface either! 
 
 ## FOR MY OWN REFERENCE
-The error with the api was due to the repeated naming for the route "localhost:3000/api/gcd'/gcd'" which is supposed to be "localhost:3000/api/gcd" only. The input access in the request is in req.'body'.input, not just req.input.
+The error with the api was due to the repeated naming for the route "localhost:3000/api/gcd'/gcd'" which is supposed to be "localhost:3000/api/gcd" only. The input access in the request is in req.'body'.input, not just req.input.  
 The way to access this api at the moment is to make a POST request through Postman at "localhost:3000/api/gcd". The payload is in JSON form in the body with the key name as "input".
