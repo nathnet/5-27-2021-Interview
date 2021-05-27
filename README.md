@@ -1,6 +1,8 @@
 # Agoda-Interview
 
 Although the functionality is there, there is no functional API at the time of submission.
+Commit at the time of submission: 5bf77a4
+The rest of the commits are for my learning progress for future endeavour.
 
 ## How to run
 1. Change directory into api folder
