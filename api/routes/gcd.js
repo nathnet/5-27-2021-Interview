@@ -82,11 +82,11 @@ function gcdOperations(num1, num2) {
  */
 router.post('/gcd', function(req, res) {
     try {
-        console.log(req);
-        let input = req.input;
+        let input = req.body.input;
+        console.log(input);
         let result = greatestCommonDivisor(input);
 
-        return res.status(200).send(result);
+        return res.status(200).send(result.toString(10));
     } catch(err) {
         console.error(err);
     }

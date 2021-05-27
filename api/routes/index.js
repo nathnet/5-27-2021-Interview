@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.use('/gcd', require('./gcd').router);
+router.use('/', require('./gcd').router);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
