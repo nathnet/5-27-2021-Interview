@@ -6,10 +6,10 @@ The rest of the commits are for my learning progress for future endeavour.
 
 ## How to run
 1. Change directory into api folder
-2. Run npm install
-if you want to run the test
-3. Run npm test
-if you want to run the server
+2. Run npm install  
+if you want to run the test  
+3. Run npm test  
+if you want to run the server  
 3. Run npm start
 4. Open up Postman
 5. Set the request to be POST and the location to be "localhost:3000/api/gcd"
