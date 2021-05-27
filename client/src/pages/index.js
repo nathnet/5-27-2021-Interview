@@ -9,7 +9,7 @@ function Home() {
     });
 
     function handleChange(event) {
-        let value = event.target.value.replace(/[^0-9\s]+/g, "");
+        let value = event.target.value.replace(/[^0-9\s-]+/g, "");
         setState({
             ...state,
             [event.target.name]: value

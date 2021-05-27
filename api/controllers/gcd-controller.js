@@ -10,8 +10,12 @@ const GreatestCommonDivisor = new gcd();
     try {
         let input = req.body.numbers;
         input = input.trim()
-        input = input.replace(/[^0-9\s]+/g, '').replace(/\s\s+/g, ' ')
+        input = input.replace(/[^0-9\s-]+/g, '').replace(/\s\s+/g, ' ')
         input = input.split(" ");
+        for (let i = 0; i < input.length; i++) {
+            input[i] = Math.abs(parseInt(input[i]));
+        }
+
         let result = GreatestCommonDivisor.arrayGreatestCommonDivisor(input);
 
         return res.status(200).json({
