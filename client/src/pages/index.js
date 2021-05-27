@@ -38,24 +38,31 @@ function Home() {
             <div className="display-4 my-4">
                 Greatest Common Divisor for Array Calculator
             </div>
-            <form className="mt-5 mb-4" onSubmit={handleSubmit}>
-                <label 
-                    className="mx-4 my-auto"
-                    for="numbers"
-                >
-                    Number Array:
-                </label>
-                <input
-                    id="numbers"
-                    name="numbers"
-                    value={state.input}
-                    onChange={handleChange}
-                />
+            <div className="mt-5 mb-4">
+                <form className="h5" onSubmit={handleSubmit}>
+                    <label 
+                        className="mx-4 my-auto"
+                        for="numbers"
+                    >
+                        Number Array:
+                    </label>
+                    <input
+                        className="p-2"
+                        id="numbers"
+                        name="numbers"
+                        value={state.input}
+                        onChange={handleChange}
+                    />
 
-                <button type="submit">
-                    Compute
-                </button>
-            </form>
+                    <button className="px-3 py-2" type="submit">
+                        Compute
+                    </button>
+                </form>
+                <div className="mt-1">
+                    <span className="font-weight-bold">Hint:</span> the number should be input with space to separate each number.
+                    <br />For example, "20 10 40 60" without the quotation marks would be a valid input. 
+                </div>
+            </div>
             {state.output === "" ? "" : (
                 <div className="mt-4">
                     <span className="mr-3">Output:</span>{state.output}
