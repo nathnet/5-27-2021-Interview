@@ -32,6 +32,7 @@ class GreatestCommonDivisor extends IGreatestCommonDivisor {
      */
     greatestCommonDivisor(num1, num2) {
         let temp = 0;
+
         while (num1 != 0) {
             temp = num2 % num1;
             num2 = num1;
